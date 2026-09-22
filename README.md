@@ -71,7 +71,7 @@ Only origin airport data was included here as the destination data may have been
 The graph shows a distinct split between the airports with average NAS delay of less than 8 minutes and the airports where average NAS delay sits between 32 and 42 minutes which is substantial enough to say some airports do suffer more NAS delays than others.
 
 ### Question 4: [Larger airports have longer taxi times]
-![
+![Number of Flight vs Average Taxi Time per Airport](q4_taxi_scatter.png)
 
 What we see here are a large number of smaller airports represented by the grey points and a robust but small sample of 74 large airports represented by the green points. Visually it seems there is no correlation in the smaller airports but evidence of positive correlation in the larger.
 
