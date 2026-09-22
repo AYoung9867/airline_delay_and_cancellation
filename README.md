@@ -47,22 +47,22 @@ This analysis compares the patterns in delay and cancellation outcomes across mu
 ## Findings
 
 ### Question 1: [Some airlines suffer more delays than others]
-![Delay distribution by airline](content/q1_delay_boxplot.png)
+![Delay distribution by airline](images/q1_delay_boxplot.png)
 
 We can see an increasing mean as average delays become more severe but the median holds fairly consistent with each airline with a range of only 6 minutes. This means the typical flight on each airline is consistently a few minutes early but the likelihood of a significant delay increases as we move up the graph.
 
 For example, on Frontier Airlines you are at a higher risk of a severe delay than Alaska, this variation is driven by severe outlier delays. Additionally, given the large sample size per airline, a formal significance test would likely confirm differences in mean delay are statistically significant, however this wouldn't be any more informative than the findings derived from the graph.
 
 ### Question 2: [Some airlines are weighted towards cancellations over delays]
-![Difference Between Average Delay and Proportion of Cancellations by Airline](content/q2_delay_cancellation_barh.png)
+![Difference Between Average Delay and Proportion of Cancellations by Airline](images/q2_delay_cancellation_barh.png)
 
 This graph shows whether a given airline has more severe average delays or a higher percentage of cancelled flights. These factors are compared by calculating a z-score (z=(x-μ)/σ) for both the average delay and cancellation percentage of each airline, then the difference between the two scores indicated whether an airline leans more toward delays or cancellations. 
 
 We find a clear distinction between some airlines that have a higher proportion of cancelled flights and ones that have more severely delayed flights. Frontier and Allegiant are the most delay dominant with a difference in delay and cancellation z-score of 2 meaning their delay performance sits 2 standard deviations further from the airline average than their cancellation performance does. Virgin America is the most cancellation dominant with a difference of nearly 3. 
 
 ### Question 3: [Some airports suffer more delays]
-![Funnel Plot to Determine which Airports Contain Enough Data to be Statistically Significant](q3_funnel.png)
-![Average NAS Delay by Airport](content/q3_NAS_delay_barh.png)
+![Funnel Plot to Determine which Airports Contain Enough Data to be Statistically Significant](images/q3_funnel.png)
+![Average NAS Delay by Airport](images/q3_NAS_delay_barh.png)
 
 Here we see the 10 airports with the highest average NAS delay and the 10 airports with the lowest average NAS delay. NAS delays are delays attributed to heavy traffic and air traffic control as well as airport operations like runway closures, construction work and de-icing procedures. Other delay options like weather, carrier and late aircraft were not considered as they don't represent airport specific delays. Although security delay is airport specific, only 0.07% of the data actually included a non-zero figure compared with the 10.35% of NAS delay data.
 
@@ -71,7 +71,7 @@ Only origin airport data was included here as the destination data may have been
 The graph shows a distinct split between the airports with average NAS delay of less than 8 minutes and the airports where average NAS delay sits between 32 and 42 minutes which is substantial enough to say some airports do suffer more NAS delays than others.
 
 ### Question 4: [Larger airports have longer taxi times]
-![Number of Flight vs Average Taxi Time per Airport](content/q4_taxi_scatter.png)
+![Number of Flight vs Average Taxi Time per Airport](images/q4_taxi_scatter.png)
 
 What we see here are a large number of smaller airports represented by the grey points and a robust but small sample of 74 large airports represented by the green points. Visually it seems there is no correlation in the smaller airports but evidence of positive correlation in the larger.
 
